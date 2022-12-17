@@ -1,0 +1,228 @@
+/* Rest Css */
+@font-face {
+        font-family: IranSans;
+        src: url("./Font/Iranian\ Sans.ttf");
+        font-weight: 400;
+        font-style: normal;
+}
+
+/* Rest Style */
+:root {
+        --color-1: #2f3640;
+        --color-2: #353b48;
+        --color-3: #e84118;
+        --color-4: #f1c40f;
+        --color-5: #ffffff;
+}
+
+* {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+html {
+        font-size: 10px;
+}
+body {
+        font-family: IranSans, Arial, sans-serif;
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: var(--color-2);
+        position: relative;
+}
+ul,
+ol {
+        list-style: none;
+}
+a {
+        text-decoration: none;
+}
+/* Rest Css */
+
+@media only screen and (max-width: 1200.1px) {
+        .box .box-ext .col2 {
+                padding: 0.25rem 0.5rem;
+        }
+        .box .box-title {
+                font-size: 1.1rem;
+        }
+        .courses .container {
+                display: grid;
+                gap: 1rem;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(auto, auto);
+                row-gap: 3rem;
+        }
+        .box .image-box {
+                height: 25rem;
+        }
+}
+@media only screen and (max-width: 992.1px) {
+        .sidebar {
+                width: 30%;
+        }
+
+        .app {
+                width: 94%;
+        }
+        .banner {
+                height: 35rem;
+        }
+        .title {
+                font-size: 1.8rem;
+        }
+        .title::after {
+                top: 52%;
+                right: 12%;
+        }
+        .title::before {
+                top: 52%;
+                right: 6%;
+                width: 5rem;
+        }
+        .box .image-box {
+                height: 20rem;
+        }
+        .articles .container {
+                margin-top: 5rem;
+                padding: 1rem 0.5rem;
+        }
+        .articles .container .mainBox {
+                width: 100%;
+                padding: 2rem 1rem;
+                display: grid;
+                grid-template-rows: repeat(auto, auto);
+                grid-template-columns: repeat(2, 48%);
+                row-gap: 1rem;
+                column-gap: 0.5rem;
+                justify-content: space-between;
+        }
+}
+@media only screen and (max-width: 768.1px) {
+        .sidebar {
+                width: 45%;
+        }
+        .sidebar .row {
+                padding-left: 0.5rem;
+        }
+        .sidebar.active {
+                transform: translateX(87%);
+        }
+        .header {
+                padding: 1rem 0.5rem;
+        }
+        .header--content {
+                font-size: 1.5rem;
+                font-weight: 500;
+        }
+        .search-box textarea {
+                font-size: 1.3rem;
+        }
+        .search-box .bx {
+                font-size: 1.6rem;
+        }
+        .search-box {
+                width: 21rem;
+        }
+        .title {
+                justify-content: center;
+        }
+        .title::after {
+                right: 20%;
+        }
+        .title::before {
+                right: 24%;
+        }
+        .courses .container {
+                grid-template-columns: repeat(1, 90%);
+                grid-template-rows: repeat(auto, auto);
+        }
+        .btn-more {
+                margin-top: 2rem;
+        }
+        .box .image-box {
+                height: 25rem;
+        }
+        .articles .container .mainBox {
+                width: 100%;
+                padding: 1rem 0.5rem;
+                display: grid;
+                grid-template-rows: repeat(auto, auto);
+                grid-template-columns: repeat(1, 90%);
+                row-gap: 3rem;
+                align-items: center;
+                justify-content: space-between;
+        }
+}
+@media only screen and (max-width: 600.1px) {
+        .sidebar {
+                width: 60%;
+        }
+        .app {
+                width: 92%;
+        }
+        .search-box textarea {
+                font-size: 0.8rem;
+        }
+        .search-box .bx {
+                font-size: 1.3rem;
+        }
+        .search-box {
+                width: 15rem;
+        }
+        .header--content {
+                font-size: 1.4rem;
+        }
+        .header {
+                padding: 0.75rem 0.25rem;
+        }
+        .box .image-box {
+                height: 20rem;
+        }
+        footer .row {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+        }
+        footer .desc {
+                width: 70%;
+                padding: 1rem 0;
+                margin-bottom: 2rem;
+        }
+}
+@media only screen and (max-width: 470.1px) {
+        html {
+                font-size: 8px;
+        }
+        .sidebar {
+                width: 70%;
+        }
+        .app {
+                width: 90%;
+        }
+        .header--content {
+                font-size: 1rem;
+        }
+        .banner {
+                height: 25rem;
+        }
+        .title::after {
+                right: 13%;
+        }
+        .title::before {
+                right: 15%;
+        }
+        .box .box-title {
+                font-size: 0.6rem;
+        }
+        .box i.bx {
+                font-size: 1rem;
+        }
+        .courses .container {
+                grid-template-columns: repeat(1, 100%);
+                grid-template-rows: repeat(auto, auto);
+        }
+}
